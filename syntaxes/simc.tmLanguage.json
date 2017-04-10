@@ -1,0 +1,50 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "SimC",
+	"patterns": [
+		{
+			"name": "comment.line.number-sign.simc",
+			"begin": "#",
+			"end": "$"
+		},
+		{
+			"name": "string.quoted.double.simc",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.simc",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "variable.parameter.simc",
+			"begin": "\\$\\(",
+			"end": "\\)"
+		},
+		{
+			"name": "constant.numeric.simc",
+			"match": "\\b(-)?(\\d*\\.)?\\d+\\b"
+		},
+		{
+			"name": "keyword.operator.simc",
+			"match": "!|\\||\\&|=|>|<|\\+|-|/|\\*"
+		},
+		{
+			"match": "^\\s*([a-zA-Z0-9_.-]+)\\b([+]?=/?)",
+			"captures": {
+				"1": { "name": "keyword.other.simc" },
+				"2": { "name": "punctuation.separator.key-value.simc" }
+			}
+		},
+		{
+			"match": ",([a-zA-Z0-9_.-]+)\\b(=)",
+			"captures": {
+				"1": { "name": "keyword.other.simc" },
+				"2": { "name": "punctuation.separator.key-value.simc" }
+			}
+		}
+	],
+	"scopeName": "source.simc"
+}

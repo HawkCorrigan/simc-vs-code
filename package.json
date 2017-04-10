@@ -1,0 +1,26 @@
+{
+    "name": "simulationcraft",
+    "displayName": "SimulationCraft",
+    "description": "Language Support for SimC TCI",
+    "version": "0.0.1",
+    "publisher": "Mystler",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "simc",
+            "aliases": ["SimC", "simc"],
+            "extensions": [".simc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "simc",
+            "scopeName": "source.simc",
+            "path": "./syntaxes/simc.tmLanguage.json"
+        }]
+    }
+}
