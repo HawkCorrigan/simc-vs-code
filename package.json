@@ -2,8 +2,9 @@
     "name": "simulationcraft",
     "displayName": "SimulationCraft",
     "description": "Language Support for SimC TCI",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "Mystler",
+    "icon": "images/logo.png",
     "repository": {
 		"type": "git",
 		"url": "https://github.com/Mystler/simc-vs-code"

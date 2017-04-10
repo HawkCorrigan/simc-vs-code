@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.0.3
+- Added SimC icon
+
 ## 0.0.2
 - Added modulo operator (%)
 - Added git repo information to package info
